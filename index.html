@@ -19,31 +19,46 @@
         <form action="" method="post">
             <!-- Información personal -->
             <h4>Información personal</h4>
+        <div>
             <label for="nombre" id="nombre">Nombre:</label>
-            <input type="text" required placeholder="Introduce tu nombre" size="41" maxlength="30" minlength="3" autofocus><br>
+            <input type="text" required placeholder="Introduce tu nombre" size="41" maxlength="30" minlength="3" autofocus>
+        </div>
+        <div>
             <label for="apellidos" id="apellidos"> Apellidos:</label>
-            <input type="text" required placeholder="Introduce tus apellidos" size="42" maxlength="50" minlength="4"><br>
+            <input type="text" required placeholder="Introduce tus apellidos" size="42" maxlength="50" minlength="4">
+        </div>
+        <div>
             <label for="email" id="email">Email:</label>
-            <input type="email" required placeholder="Introduce tu email" size="44" minlength="5"><br>
+            <input type="email" required placeholder="Introduce tu email" size="44" minlength="5">
+        </div>
+        <div>
             <label for="telefono" id="telefono">Teléfono:</label>
-            <input type="tel" required placeholder="(+34)123-456-789" size="20" maxlength="11"><br><br>
+            <input type="tel" required placeholder="(+34)123-456-789" size="20" maxlength="11">
+        </div>
+        <br><br>
             <hr>
             <!-- Datos informacion de pedido y método de pago -->
             <h4>Información de pedido</h4>
+        <div>
             <label for="cantidad">Cantidad:
             <input type="number" id="cantidad" name="cantidad" size="5" max="100" min="1" step="1" placeholder="1">
-            </label><br>
+            </label>
+        </div>
+        <div></div>
             <label for="color">Selecciona el color:</label><br>
-            <input type="color" name="color" id="color"><br>
-            <label for="talla">Selecciona tu talla: <br><br>
+            <input type="color" name="color" id="color">
+        </div>
+        <div>
+            <label for="talla">Selecciona tu talla:</label><br><br>
             <input type="checkbox" name="talla" id="talla">
             <label for="">S</label>
             <input type="checkbox" name="talla" id="talla">
             <label for="">M</label>
             <input type="checkbox" name="talla" id="talla">
             <label for="">L</label>
-            </label><br><br>
+        </div>
             <!-- Espacio para informacion para pedido mayor o detal -->
+        <div>
             <label for="pedido">Pedido</label>
             <input type="hidden" id="pedido" class="pedido">
             <label for="pago">Forma de pago:</label><br><br>
@@ -55,15 +70,20 @@
             <label for="">Bizum</label><br>
             <input type="radio" name="pago" id="pago">
             <label for="">Paypal</label><br><br>
+        </div>
+        <div>
             <label for="fecha" id="fecha">Selecciona fecha de envio:</label><br><br>
             <input type="date" name="fecha" id="fecha" min="2024-01-01"><br><br>
             <hr>
             <label for="contraseña" id="contraseña">Contraseña:</label>
-            <input type="password" required minlength="6" placeholder="Introduce tu contraseña" ><br>
+            <input type="password" required minlength="6" placeholder="Introduce tu contraseña"><br>
             <label for="confirmar">Confirmar contraseña:</label>
             <input type="password" id="confirmar" name="confirmar" minlength="6" placeholder="Confirma tu contraseña">
+        </div>
+        <div>
             <label for="textarea">Información adicional</label><br><br>
             <textarea name="informacion" id="informacion" rows="5" cols="50" placeholder="Escribe tu informacion aquí" maxlength="100"></textarea>
+        </div>
             <br><br>
             <!-- Enlace de enviado -->
             <div class="div-buttom">
