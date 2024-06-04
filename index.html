@@ -26,7 +26,7 @@
             <label for="email" id="email">Email:</label>
             <input type="email" required placeholder="Introduce tu email" size="44" minlength="5"><br>
             <label for="telefono" id="telefono">Teléfono:</label>
-            <input type="tel" required placeholder="(+34)123-456-789" size="20"><br><br>
+            <input type="tel" required placeholder="(+34)123-456-789" size="20" maxlength="11"><br><br>
             <hr>
             <!-- Datos informacion de pedido y método de pago -->
             <h4>Información de pedido</h4>
@@ -36,19 +36,25 @@
             <label for="color">Selecciona el color:</label><br>
             <input type="color" name="color" id="color"><br>
             <label for="talla">Selecciona tu talla: <br><br>
-            <input type="checkbox" name="talla" id="talla">S
-            <input type="checkbox" name="talla" id="talla">M
-            <input type="checkbox" name="talla" id="talla">L
+            <input type="checkbox" name="talla" id="talla">
+            <label for="">S</label>
+            <input type="checkbox" name="talla" id="talla">
+            <label for="">M</label>
+            <input type="checkbox" name="talla" id="talla">
+            <label for="">L</label>
             </label><br><br>
             <!-- Espacio para informacion para pedido mayor o detal -->
             <label for="pedido">Pedido</label>
             <input type="hidden" id="pedido" class="pedido">
             <label for="pago">Forma de pago:</label><br><br>
-            <input type="radio" name="pago" id="pago">Tarjeta <br>
-            <input type="radio" name="pago" id="pago">Transferencia<br>
-            <input type="radio" name="pago" id="pago">Bizum <br>
-            <input type="radio" name="pago" id="pago">PayPal <br>
-            </label><br>
+            <input type="radio" name="pago" id="pago">
+            <label for="">Tarjeta</label><br>
+            <input type="radio" name="pago" id="pago">
+            <label for="">Transferencia</label><br>
+            <input type="radio" name="pago" id="pago">
+            <label for="">Bizum</label><br>
+            <input type="radio" name="pago" id="pago">
+            <label for="">Paypal</label><br><br>
             <label for="fecha" id="fecha">Selecciona fecha de envio:</label><br><br>
             <input type="date" name="fecha" id="fecha" min="2024-01-01"><br><br>
             <hr>
@@ -57,11 +63,11 @@
             <label for="confirmar">Confirmar contraseña:</label>
             <input type="password" id="confirmar" name="confirmar" minlength="6" placeholder="Confirma tu contraseña">
             <label for="textarea">Información adicional</label><br><br>
-            <textarea name="informacion" id="informacion" rows="5" cols="50" placeholder="Escribe tu informacion aquí" maxlength="150"></textarea>
+            <textarea name="informacion" id="informacion" rows="5" cols="50" placeholder="Escribe tu informacion aquí" maxlength="100"></textarea>
             <br><br>
             <!-- Enlace de enviado -->
             <div class="div-buttom">
-                <a href="/respuesta.html" title="enviado">
+                <a href="/respuesta.html" id="enviado">
                 <button type="submit" class="enviar1">Enviar</button></a>
                 <button type="reset" class="borrar">Borrar</button>
             </div>
